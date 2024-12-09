@@ -1,0 +1,844 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 6800px;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+}
+.header{
+    width: 100%;
+    height: 40px;
+    /* background-color: rgb(61, 39, 24); */
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    opacity: 1;
+
+}
+.list {
+    list-style: none;
+    float: right;
+    margin-right: 120px;
+    margin-top: -22px;  
+}
+
+.list  li{
+    display: inline-block;
+    margin-left: 35px;
+    color: white;
+    
+}
+.list li a {
+    text-decoration: none;
+    color: white;
+}
+.i1{
+    margin-left: 15px;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+}
+.search{
+    width: 300px;
+    height: 25px;
+    margin-left: 50px;
+    margin-top: -20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px ;
+}
+.i2{
+    margin-left: 20px;
+    margin-top: 5px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.home{
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    color: #dfdfdf;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/time-2980690_640.jpg);
+    display: flex;
+}
+.home-overlay{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left:auto;
+    background-color: rgba(0,0,0,.7); 
+
+}
+.home-content{
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.home-title{
+    color: #fff;
+    font-size: 55px;
+    text-transform: uppercase;
+}
+.home-p{
+    color: #dfdfdf;
+    margin: 20px 0px;
+    letter-spacing: 1.5px;
+}
+.home-btn{
+    width: 150px;
+    height: 40px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 18px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.home-btn2{
+    background-color: blue;
+    color: #fff;
+    margin: 10px;
+}
+.home-btn:hover{
+    opacity: .5;
+}
+.welcome{
+    text-align: center;
+    margin: auto;
+    font-size: 30px;
+    color: black;
+    text-transform: capitalize;
+}
+.line1{
+    width: 150px;
+    height: 5px;
+    background-color: rgb(107, 107, 243);
+    margin: auto;
+    margin-top: 10px;
+}
+.welcome-content{
+    width: 280px;
+    height: 200px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    float: left;
+    margin-top: 50px;
+    margin-left: 150px;
+    position: relative;
+}
+i{
+    margin-top: 25px;
+    color: blue;
+}
+.welcome-item-title{
+    margin-top: 10px;
+    font-size: 25px;
+    text-transform: capitalize;
+    text-align: center;
+}
+.welcome-span{
+    margin-top: 20px;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+.welcome .mid{
+    margin-top: 50px;
+    margin-left: 80px;
+}
+.welcome .last{
+    margin-left: -1px;
+}
+.welcome-link{
+    font-size: 18px;
+    color: blue;
+    margin: auto;
+    text-decoration: none;
+}
+.welcome-content:after{
+    content:" ";
+    position: absolute; /* لازم اقيده ب الايتم */
+    width: 0;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 44, 155);
+    transition: .5s;
+    opacity: 1;
+}
+.welcome-content:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: .3;
+}
+
+.featured-work{
+    margin-top: 520px;
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgb(61, 39, 24); */
+    background-color: gainsboro;
+
+
+}
+.featured-title-work{
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 60px;
+    color: black;
+    text-transform: capitalize;
+}
+.featured-line{
+    width: 150px;
+    height: 5px;
+    background-color: rgb(107, 107, 243);
+    margin: auto;
+    margin-top: 15px;
+}
+.featured-div1{
+    position: relative; 
+    overflow: auto;
+    overflow-y: hidden;
+}
+.featured-div2{
+    position: relative;
+    overflow: auto;
+}
+.featured-content{
+    float: left;
+    width: 280px;
+    height: 220px;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    color: #dfdfdf;
+    display: flex;
+    margin-left: 200px;
+}
+.first1 {
+    margin-left: 200px;
+    margin-top: 20px;
+}
+.mid1{
+    margin-left: 100px;
+    margin-top: 20px;
+}
+.last1{
+    margin-top: 20px;
+    margin-left: 100px;
+}
+.first2 {
+    margin-left: 200px;
+    margin-top: 40px;
+}
+.mid2{
+    margin-left: 100px;
+    margin-top: 40px;
+}
+.last2{
+    margin-top: 40px;
+    margin-left: 100px;
+}
+.overlay-featured{
+    max-width: 100vh;
+    margin-left: -.5px;
+    margin-top: 40px;
+    position: absolute;
+    top: 0;
+    width: 280px; 
+    height: 220px;
+    background-color: rgba(0,0,0,.5);
+    visibility: hidden;
+}
+.overlay-featured i{
+    background-color: #dfdfdf;
+    /* text-align: center; */
+    margin-left: 100px;
+    line-height: 50px;
+    font-size: 40px;
+}
+.overlay-featured .i2{
+    margin-left: -2px;
+    color: blue;
+}    
+.feature-title{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 12px 0px;
+    color: rgb(255, 255, 255);
+}
+.feature-title2{
+    text-align: center;
+    text-transform: capitalize;
+    color: rgb(151, 149, 149);
+    font-size: 25px;
+}
+.featured-content:hover .overlay-featured{
+    visibility: visible;
+}
+.featured-content :after{
+    content:" ";
+    position: absolute; /* لازم اقيده ب الايتم */
+    width: 0;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    transition: .5s;
+}
+.featured-content:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: .3;
+}
+.what-we-offer{
+   position: relative;
+   overflow: auto;
+}
+.what-we-offer-div2{
+    position: relative;
+    overflow: auto;
+}
+.what-we-offer-title{
+    text-align: center;
+    margin: auto;
+    font-size: 50px;
+    color: black;
+    text-transform: capitalize;
+}
+.what-we-offer-line{
+    width: 150px;
+    height: 5px;
+    background-color: rgb(107, 107, 243);
+    margin: auto;
+    margin-top: 10px;
+}
+.what-we-offer-content{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    border: 1.5px solid rgb(89, 110, 215);
+    float: left;
+    border-radius: 6px;
+    margin-left: 120px;
+    margin-top: 30px;
+    padding: 0 10px;
+}
+.what-we-offer .mid{
+    margin-top: 30px;
+    margin-right:10px;
+    margin-left: 100px;
+}
+.what-we-offer-div2 .mid{
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-left: 100px;
+}
+.what-we-offer-content i{
+    font-size: 30px;
+}
+.w-span{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+.w-p{
+    color: gray;
+    text-align: center;
+}
+.what-we-offer-content:after{
+    content:" ";
+    position: absolute; /* لازم اقيده ب الايتم */
+    width: 0;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 44, 155);
+    transition: .5s;
+    opacity: 1;
+}
+.what-we-offer-content:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: .3;
+}
+.why-choose-us{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    gap: 30px;
+    background-color: #fff;
+}
+.why-choose-us .content{
+    flex: 1;
+    max-width: 600px;
+}
+.why-choose-us .content h1{
+    font-size: 4em;
+    color: #000;
+    margin-bottom: 10px;
+    border-bottom: 3px solid #666;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+.why-choose-us .content p{
+    font-size: 1.4em;
+    color: #666;
+    margin-bottom: 20px;
+}
+.why-choose-us .content ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 3em;
+}
+.why-choose-us .content ul li{
+    font-size: 1.2em;
+}
+.why-choose-us .image{
+    width: 35%;
+    height: 80%;
+    margin: 0px 40px;
+    background-size: cover;
+    border-radius: 2px;
+    display: block;
+
+}
+.why-choose-us .image img{
+    max-width: 100%;
+    height: 100%;
+}
+.circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #666;
+    display: inline-block;
+    /* display: inline; */
+    margin-bottom: -40px;
+    margin-right: -75px;
+    margin-left: 250px;
+}
+.circle:hover{
+    background-color: blue;
+}
+.mid-c{
+    margin-left: -1px;
+    margin-right: -160px;
+}
+.states{
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    gap: 200px;
+    padding: 40px;
+    color: #dfdfdf;
+    width: 100%;
+    height: 75vh;
+    background-image: url(../images/analog-watch-1869928_640.jpg);
+    display: flex;
+}
+.state-item{
+    margin-top: 100px;
+    text-align: center;
+    color: #fff;
+}
+.state-item i{
+    margin-top: -50px;
+    font-size: 50px;
+    display: block;
+    margin-bottom: 10px;
+    color: rgb(123, 104, 246);
+}
+.state-item .h3{
+    margin-top: 5px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.state-item .p{
+    margin-top: 100px;
+    margin-left: 100px;
+    font-size: 1rem;
+}
+.title1{
+    font-size: 60px;
+    text-align: center;
+    margin-top: 150px;
+}
+.line{
+    width: 100px;
+    height: 4px;
+    background-color: blue;
+    margin: auto;
+    margin-top: 20px;
+}
+.title2,.title3,.title4{
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.parent{
+   overflow: auto;
+   margin-top: 100px;
+   margin-left: 300px;
+}
+.div{
+    width: 250px;
+    height: 300px;
+    border: 1px solid gray;
+    background-color: white;
+    float: left;
+    text-align: center;
+    border-radius: 10px;
+}
+.div-mid{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.btn1{
+    height: 30px;
+    width: 175px;
+    font-size: 20px;
+    margin-top: 20px;
+    color: black;
+    background-color:rgb(225, 225, 225);
+    border: 2px solid rgb(77, 77, 212);
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+.btn1:hover{
+    background-color: #d5d0d0;
+}
+.price1,.price2,.price3{
+    margin-top: 20px;
+    width: 80px;
+    height: 80px;
+    border: 2px solid #9bb1e2;
+    border-radius: 50%;
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    margin-left: 80px;
+}
+.p3{
+    font-size: 30px;
+}
+.div{
+    position: relative;
+}
+.div:after{
+    content:" ";
+    position: absolute; /* لازم اقيده ب الايتم */
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    background-color: rgb(50, 50, 208);
+    transition: .5s;
+    opacity: 1;
+}
+.div:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: .3;
+}
+.football{
+    margin-top: 100px;
+    background-image: url(../Images/vintage-pocket-watch-7439233_640.jpg);
+    width: 100%;
+    height: 350px;
+    overflow: auto;
+}
+.overlay-football{
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .7);
+}
+.parent-football{
+    overflow: auto;
+}
+.item-football{
+    padding: 110px 200px;
+    width: 750px;
+    float: left;
+}
+.item-football img{
+    border-radius: 50%;
+}
+.hh{
+    display: inline-block;
+    position: relative;
+    top: -20px;
+    left: 10px;
+}
+.item-football h2{
+    color: azure;
+}
+.item-football h3{
+    line-height: 30px;
+    color: rgb(69, 69, 243);
+    font-size: 20px;
+}
+.item-football{
+    color: azure;
+    font-size: 15px;
+}
+.p-f{
+    text-transform: capitalize;
+    color: #dfdfdf;
+}
+.title1{
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+}
+.line{
+     width: 100px;
+     height: 2px;
+     margin: auto;
+     border: 2px solid blue;
+     margin-top: 10px;
+}
+.container{
+    width: 70%;
+    margin: auto;
+    margin-top: 100px;
+}
+.team-content{
+
+}
+.team-item{
+    float: left;
+    background-color: rgb(187, 187, 187);
+    width: 30%;
+    padding: 14px 18px;
+    text-align: center;
+    position: relative;
+}
+.mid{
+    margin: 0 5%;
+}
+.team-img{
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+.team-img img{
+    width: 100%;
+}
+.team-overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    visibility: hidden;
+}
+.team-overlay a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(53,171,240);
+    color: #fff;
+    font-size: 23px;
+    margin-left: auto;
+
+}
+.team-overlay a i{
+    line-height: 5px;
+}
+.team-info-title{
+    text-transform: uppercase;
+    padding: 12px 0px;
+    color: rgb(58,58,58);
+}
+.team-info-sp1{
+    text-transform: capitalize;
+    color: gray;
+    font-size: 25px;
+}
+.team-item:hover .team-info-title{
+    color: #fff;
+}
+.team-item:hover .team-info-sp1{
+    color: blue;
+}
+.team-item:hover .team-overlay{
+    visibility: visible;
+}
+/*            after and before section */
+/* hover active focus : pseudo classes          after  before : pseudo elements */
+
+.team-item:after{
+    content:" ";
+    position: absolute; /* لازم اقيده ب الايتم */
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    background-color: black;
+    transition: .5s;
+    opacity: 1;
+}
+.team-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: .3;
+}
+
+.recent{
+    margin-top: 600px;
+}
+.recent h2{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700px;
+}
+.recent button{
+    width: 70px;
+    height: 5px;
+    background-color: blue;
+    margin-left: 47.5%;
+    margin-top: 10px;
+}
+
+
+.container-recent{
+    width: 90%;
+    margin: auto;
+    margin-top: 80px;
+    margin-left: 150px;
+}
+.parent-recent{
+    width: 100%;
+    height: 500px;
+    overflow: auto;
+    overflow-y: hidden;
+
+}
+.item-recent{
+    width: 30%;
+    height: 500px;
+    padding: 0 30px;
+    position: relative;
+    float: left;
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+.middle{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.item-recent img{
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    z-index: 6;
+}
+
+.item-recent h4{
+    display:inline;
+    font-weight: lighter;
+    margin: auto
+}
+.i{
+    display: inline-block;
+    margin-top: 20px;
+}
+.i2{
+    margin:0 10px;
+}
+.icon{
+    color: rgb(0, 128, 255);
+    margin: auto;
+    margin-left: 20px;
+}
+.p1{
+    margin-top: 5px;
+    /* margin: auto; */
+    font-weight: 15px;
+    margin-left: 100px;
+}
+.p2{
+    line-height: 25px;
+    font-weight: lighter;
+    color: grey;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.item-recent a{
+    color: blue;
+    font-weight: lighter;
+    margin-left: 100px;
+    text-decoration: none;
+}
+.item-recent::after{
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 0;
+    top: 0;
+    right: 0;
+    background-color:rgb(135, 133, 236);
+    opacity: 1;
+}
+.item-recent:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    transition: .5s;
+}
+
+/* 11) final//////////////////////////////////////// */
+
+.parent-final{
+    width: 100%;
+    height: 400px;
+    background-color: rgba(36, 36, 41,.8);
+    text-align: center;
+    margin-top: 150px;
+}
+.parent-final img{
+    border: 1px solid gainsboro;
+    border-radius: 3px;
+    margin-top: 80px;
+    border-radius: 10px;
+}
+.icons-final i{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: rgb(183, 194, 239);
+    color: white;
+    font-size: 35px;
+    margin-top: 25px;
+    padding-top: 10px;
+    margin-bottom: 30px;
+}
+.sp-final{
+    font-weight: lighter;
+    color: rgb(162, 168, 174);
+}
+i:hover{
+    background-color:blue;
+} 
